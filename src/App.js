@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import PageTitle from './components/headers/PageTitle'
+import HousesHeaderTitle from './components/headers/HousesHeaderTitle';
+
 
 class App extends Component {
   render() {
@@ -9,6 +11,9 @@ class App extends Component {
        <header>
          <PageTitle />
        </header>
+       <div>
+      <HousesHeaderTitle />
+       </div>
       </div>
     );
   }
