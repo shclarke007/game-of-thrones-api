@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import PageTitle from './components/headers/PageTitle'
-import HousesHeaderTitle from './components/headers/HousesHeaderTitle';
-
+import HousesData from './components/HousesData'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
        <header>
-         <PageTitle />
+        <PageTitle />
        </header>
-       <div>
-      <HousesHeaderTitle />
+      <div>
+        <HousesData />
        </div>
       </div>
     );

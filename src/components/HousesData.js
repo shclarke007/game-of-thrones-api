@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import HousesHeaderTitle from '../components/headers/HousesHeaderTitle';
-
-class Houses extends Component {
+import HousesList from './HousesList'
+class HousesData extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,7 +36,7 @@ class Houses extends Component {
             <HousesHeaderTitle />
           </header>
           <div className="cardsContainer">
-            {houses}
+            <HousesList houses={houses} />
           </div>
         </div>
       );
@@ -44,4 +44,4 @@ class Houses extends Component {
   }
 }
 
-export default Houses;
+export default HousesData;
